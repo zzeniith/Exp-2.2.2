@@ -16,7 +16,7 @@ let token = "";
 
 // Register
 async function register() {
-  await fetch("https://exp-2-2-2-6fbn.onrender.com//register", {
+  await fetch("http://localhost:5000/register", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({
@@ -29,7 +29,7 @@ async function register() {
 
 // Login
 async function login() {
-  const res = await fetch("https://exp-2-2-2-6fbn.onrender.com//login", {
+  const res = await fetch("http://localhost:5000/login", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({
@@ -46,7 +46,7 @@ async function login() {
 
 // Get Balance
 async function getBalance() {
-  const res = await fetch("https://exp-2-2-2-6fbn.onrender.com//balance", {
+  const res = await fetch("http://localhost:5000/balance", {
     headers: {
       "Authorization": token
     }

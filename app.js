@@ -60,5 +60,5 @@ app.get("/balance", auth, (req, res) => {
 
 // Server
 app.listen(5000, () => {
-  console.log("Server running on https://exp-2-2-2-6fbn.onrender.com/");
+  console.log("Server running on http://localhost:5000");
 });
